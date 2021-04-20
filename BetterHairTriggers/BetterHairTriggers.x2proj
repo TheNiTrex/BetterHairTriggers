@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>5604952a-209b-4547-9892-4ec2266543a9</Guid>
+    <Name>Better Hair Triggers</Name>
+    <Description>Replaces the vanilla Hair Trigger effect with a new one.
+
+tags= War Of The Chosen, Item, Weapon, Gameplay</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>BetterHairTriggers</AssemblyName>
+    <RootNamespace>BetterHairTriggers</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\BetterHairTriggers\" />
+    <Folder Include="Src\BetterHairTriggers\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\BetterHairTriggers\Classes\X2Ability_BetterHairTriggers.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\BetterHairTriggers\Classes\X2DownloadableContentInfo_BetterHairTriggers.uc" />
+    <Content Include="Src\BetterHairTriggers\Classes\X2Effect_BonusReactionFireDamage.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
